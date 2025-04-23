@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const addTaskButton = document.getElementById('addTaskButton');
     const taskList = document.getElementById('taskList');
 
-    // Función para crear un nuevo ítem de tarea
+   
     function createTaskItem(taskText) {
         const li = document.createElement('li');
 
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return li;
     }
 
-    // Función para agregar una nueva tarea
+   
     function addTask() {
         const taskText = taskInput.value.trim();
 
@@ -39,10 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Agregar tarea al hacer clic en el botón
+   
     addTaskButton.addEventListener('click', addTask);
 
-    // Agregar tarea al presionar Enter
+   
     taskInput.addEventListener('keypress', (e) => {
         if (e.key === 'Enter') {
             addTask();
